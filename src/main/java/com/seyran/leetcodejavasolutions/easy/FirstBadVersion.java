@@ -1,5 +1,14 @@
 package com.seyran.leetcodejavasolutions.easy;
 
+class VersionControl {
+
+    private final int bad = 4;
+
+    public boolean isBadVersion(int version) {
+        return version >= bad;
+    }
+}
+
 public class FirstBadVersion extends VersionControl {
 
     public int firstBadVersion(int n) {
@@ -22,22 +31,7 @@ public class FirstBadVersion extends VersionControl {
     }
 
     public static void main(String[] args) {
-
         FirstBadVersion solution = new FirstBadVersion();
-
-        System.out.println(solution.firstBadVersion(5)); // 4
-        System.out.println(solution.firstBadVersion(10)); // 4
-    }
-}
-public class VersionControl {
-
-    private final int bad;
-
-    public VersionControl() {
-        this.bad = 4; // ilk pis versiya
-    }
-
-    public boolean isBadVersion(int version) {
-        return version >= bad;
+        System.out.println(solution.firstBadVersion(5));
     }
 }
